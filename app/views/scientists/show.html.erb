@@ -1,0 +1,20 @@
+<h1>Scientist Name: <%= @scientist.name%></h1>
+<h2>Field of study: <%= @scientist.field_of_study%></h2>
+
+<h3> Planets visited:</h3>
+<table>
+    <tr>
+    <th>Name</th>
+    <th>Distance from Earth</th>
+    <th>Nearest Star</th>
+    </tr>
+    <tr>
+
+    <% @scientist.planets.each do |p| %>
+        <td><%= p.name %></td>
+        <td><%= p.distance_from_earth %></td>
+        <td><%= p.nearest_star %></td>
+    <% end %>
+    </tr>
+</table>
+<%= link_to "Edit Scientist", edit_scientist_path %> 

@@ -6,10 +6,10 @@ It is the year 2100 and you run an interplanetary space travel agency.  You are 
 
 - Sketch out the domain of the models of Planet, Scientist and Mission.  Think about what foreign keys should go on which models.  What are the relationships between the three?
 
-- Once you are confident in your domain sketch, build out the models and migrations for your database. 
-    - Your Scientist model should have a **name (string)** and **field_of_study (string)**.  
-    - Your Mission model should have a **name (string)**.  
-    - You will also need to include **foreign keys** on the appropiate models.  
+- Once you are confident in your domain sketch, build out the models and migrations for your database.
+    - Your Scientist model should have a **name (string)** and **field_of_study (string)**.
+    - Your Mission model should have a **name (string)**.
+    - You will also need to include **foreign keys** on the appropiate models.
 
 - Test your models are set up correctly by running `rails db:seed` (hint: make sure you set up the relationships on your models!)
 
@@ -32,5 +32,5 @@ It is the year 2100 and you run an interplanetary space travel agency.  You are 
         - A mission must have a unique name, a scientist, and a planet.
         - After the mission is created, the user should be redirect to the scientist's detail page
         - Check that this is working correctly by verifying the new planet appears on the scientist's detail page
-        
+
  - Build an "about" page at "/about" which should list your name and the total number of scientists and planets in your database.
